@@ -13,6 +13,6 @@ Simple code written using Python for getting data from Foursquare.com
 
     pip install foursquare
 
- ## Refarence
- 
- 	https://github.com/mLewisLogic/foursquare/edit/master/README.md
+## Refarence
+
+	https://github.com/mLewisLogic/foursquare/edit/master/README.md
