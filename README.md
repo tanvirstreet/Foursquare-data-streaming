@@ -15,4 +15,4 @@ Simple code written using Python for getting data from Foursquare.com
 
 ## Refarence
 
-	https://github.com/mLewisLogic/foursquare/edit/master/README.md
+	https://github.com/mLewisLogic/foursquare
