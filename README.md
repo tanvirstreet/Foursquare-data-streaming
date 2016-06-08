@@ -2,6 +2,7 @@
 Simple code written using Python for getting data from Foursquare.com
 
 ## Initial Steps
+
 	First Creat the app in 'https://foursquare.com/developers/apps'
 	Then collect the access token form
 	'https://foursquare.com/oauth2/authenticate?client_id=CLIENT_ID&response_type=token&redirect_uri=YOUR_REGISTERED_REDIRECT_URI'
@@ -12,5 +13,6 @@ Simple code written using Python for getting data from Foursquare.com
 
     pip install foursquare
 
- ## Refarence
- 	https://github.com/mLewisLogic/foursquare/edit/master/README.md
+## Refarence
+
+	https://github.com/mLewisLogic/foursquare
