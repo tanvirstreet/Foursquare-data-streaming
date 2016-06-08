@@ -30,8 +30,21 @@ client.set_access_token(access_token)
 # 		Self information of the user who created the app
 user = client.users()
 
+firstname = user["user"]["firstName"]
+lastname = user["user"]["lastName"]
+gender = user["user"]["gender"]
+
+name = "Name      : "+ firstname + " " + lastname +'\n'
+Gender = "Gender    : "+ gender + '\n'
+print(name)
+print(Gender)
+
+f = open('../data/Formated/4sq_user_self.txt', 'a')
+f.write(name)
+f.write(Gender)
+f.close()
 #for writing the Json data in the specified file
-with open('../data/4sq_user_self.txt', 'a') as outfile:
+with open('../data/Json/4sq_user_self.txt', 'a') as outfile:
     json.dump(user, outfile)
 
 #for printing the Json data in the console
