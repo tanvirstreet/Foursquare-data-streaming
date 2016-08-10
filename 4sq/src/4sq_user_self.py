@@ -33,18 +33,26 @@ user = client.users()
 firstname = user["user"]["firstName"]
 lastname = user["user"]["lastName"]
 gender = user["user"]["gender"]
+email = user["user"]["contact"]["email"]
+homeCity = user["user"]["homeCity"]
 
 name = "Name      : "+ firstname + " " + lastname +'\n'
 Gender = "Gender    : "+ gender + '\n'
+emaiL = "Email     : "+email + '\n'
+HomeCity = "Home City : "+ homeCity + '\n'
 print(name)
 print(Gender)
+print(emaiL)
+print(HomeCity)
 
 f = open('../data/Formated/4sq_user_self.txt', 'a')
 f.write(name)
 f.write(Gender)
+f.write(emaiL)
+f.write(HomeCity)
 f.close()
 #for writing the Json data in the specified file
-with open('../data/Json/4sq_user_self.txt', 'a') as outfile:
+with open('../data/Json/4sq_user_self.json', 'a') as outfile:
     json.dump(user, outfile)
 
 #for printing the Json data in the console

@@ -26,7 +26,7 @@ client.set_access_token(access_token)
 venues = client.venues('4ca6e14d44a8224b17ef0740')
 
 #for writing the Json data in the specified file
-with open('../data/4sq_venues.txt', 'a') as outfile:
+with open('../data/Json/4sq_venues.json', 'a') as outfile:
     json.dump(venues, outfile)
 
 #for printing the Json data in the console 
