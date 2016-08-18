@@ -33,7 +33,13 @@ user = client.users(userName)
 firstname = user["user"]["firstName"]
 lastname = user["user"]["lastName"]
 gender = user["user"]["gender"]
-twitter = user["user"]["contact"]["twitter"]
+twitter = ""
+for contact in user["user"]["contact"]:
+	if contact == "twitter":
+		twitter=user["user"]["contact"][contact]
+		print(twitter)
+		pass
+	pass
 
 name = "Name      : "+ firstname + " " + lastname +'\n'
 Gender = "Gender    : "+ gender + '\n'

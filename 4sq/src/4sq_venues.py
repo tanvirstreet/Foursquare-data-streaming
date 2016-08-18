@@ -31,4 +31,5 @@ with open('../data/Json/4sq_%s_venues.json'%(venueID), 'a') as outfile:
 
 #for printing the Json data in the console 
 #print(venues)
+print("done.............")
 
